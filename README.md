@@ -1,9 +1,9 @@
 
-# Crypto Price Predictor
+# 💰 Crypto Price Predictor
 
 This project is a machine learning-powered application that predicts the price range of Bitcoin based on historical data. The model is built with TensorFlow and Keras, while the app’s interactive web interface is created using Streamlit. The app provides daily predictions of the cryptocurrency’s high-low range.
 
-## Table of Contents
+## 📚 Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -16,17 +16,17 @@ This project is a machine learning-powered application that predicts the price r
 
 ---
 
-## Overview
+## 📈 Overview
 
 Crypto Price Predictor trains a Long Short-Term Memory (LSTM) neural network to forecast the daily high-low price range for Bitcoin. The app takes historical data, preprocesses it, trains an LSTM model on it, and then displays predictions using an interactive web interface.  
 
-## Features
+## 🧑‍💻 Features
 
 - **Prediction of Price Range:** Utilizes machine learning to predict future price ranges for Bitcoin.
 - **Visualization:** Interactive plots visualize trends and model predictions versus test data.
 - **User-Friendly Interface:** Web interface designed for easy navigation and interaction.
 
-## Technologies Used
+## 🛠 Technologies Used
 
 - **Python**: Core language for data processing and model training.
 - **TensorFlow & Keras**: For creating and training the LSTM model.
@@ -35,14 +35,14 @@ Crypto Price Predictor trains a Long Short-Term Memory (LSTM) neural network to 
 - **Streamlit**: To create a web interface for interaction.
 - **Heroku**: Deployment platform.
 
-## Data Preprocessing
+## 🧹 Data Preprocessing
 
 1. **Adding a Range Column**: A new column, `Range`, is added, representing the difference between high and low prices.
 2. **Normalization**: The `Range` column is normalized between 0 and 1 to ensure consistent training.
 3. **Data Splitting**: The data is split into training (80%) and test (20%) sets.
 4. **Univariate Data Preparation**: For each time step, past data is prepared for prediction using a history of 5 days.
 
-## Installation
+## 📦 Installation
 
 ### Prerequisites
 
@@ -76,13 +76,13 @@ Crypto Price Predictor trains a Long Short-Term Memory (LSTM) neural network to 
 
 5. The app will open in your browser at `http://localhost:8501`.
 
-## Usage
+## 📂 Usage
 
 - **Load Data**: Use your Bitcoin historical data in CSV format, specifically containing the columns `High`, `Low`, and `Date`.
 - **Train the Model**: The model is trained on historical data to predict the next day’s price range.
 - **View Predictions**: Model predictions for test data are visualized alongside actual data.
 
-## Deployment
+## 🌐 Deployment
 
 This project is deployed on Heroku. Follow these steps for manual deployment on Heroku:
 
@@ -94,7 +94,7 @@ This project is deployed on Heroku. Follow these steps for manual deployment on 
 
 For a live version, you can access [Crypto Predictor on Heroku](https://crypto-predictor-607d9d0c7ae7.herokuapp.com/).
 
-## Project Structure
+## 🗂 Project Structure
 
 ```plaintext
 crypto-price-predictor/
